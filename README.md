@@ -9,4 +9,5 @@ I want to test serval things in this function
 4. Is that possible to call system console( for example : echo, bet et al.)
 
 For example, it can run the Matlab function in docker and input output in the host (for instance, my mac)
+
 	'' bash-3.2$ docker run -v ~/test_data/:/data/ --rm run_example_to_docker /data/Nii_Images_for_test/T1_test.nii /data/output_test.txt 1
