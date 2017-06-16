@@ -7,3 +7,6 @@ I want to test serval things in this function
 2. Does it work for calling a function of FSL to read nii image (read\_avw for an instance)
 3. Does it work for multi-language ( It seems not working)
 4. Is that possible to call system console( for example : echo, bet et al.)
+
+For example, it can run the Matlab function in docker and input output in the host (for instance, my mac)
+	'' bash-3.2$ docker run -v ~/test_data/:/data/ --rm run_example_to_docker /data/Nii_Images_for_test/T1_test.nii /data/output_test.txt 1
