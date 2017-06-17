@@ -1,4 +1,4 @@
-FROM matlab_v90_fsl_ubuntu
+FROM jngong/matlab_v90_fsl_ubuntu
 MAINTAINER Jinnan Gong <gongjinnan1989@gmail.com>
 RUN mkdir /root/matlab_script
 RUN apt-get -y install git
