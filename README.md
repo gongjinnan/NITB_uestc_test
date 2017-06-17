@@ -10,4 +10,4 @@ I want to test serval things in this function
 
 For example, it can run the Matlab function in docker and input output in the host (for instance, my mac)
 
-	'' bash-3.2$ docker run -v ~/test_data/:/data/ --rm run_example_to_docker /data/Nii_Images_for_test/T1_test.nii /data/output_test.txt 1
+	bash-3.2$ docker run -v ~/test_data/:/data/ --rm jngong/nitb_uestc_test /data/Nii_Images_for_test/T1_test.nii /data/output_test.txt 1
