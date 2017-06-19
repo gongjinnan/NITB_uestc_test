@@ -1,5 +1,5 @@
 {
      "nii_file" : "/data/Nii_Images_fortest/T1_test.nii",
-     "out_txt" : "/data/Nii_Images_fortest/test.txt",
+     "out_path" : "/data/Nii_Images_fortest/test.txt",
      "flag_of_lang":1
 }
