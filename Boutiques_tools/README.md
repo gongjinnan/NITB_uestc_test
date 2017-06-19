@@ -2,5 +2,5 @@
  1. nitb_uestc_test.json is the Boutiques descriptor
  2. inputs_localExec.json is the input definition for localExec.py
  3. inputs_invocationSchemaHandler.json is the input definition for invocationSchemaHandler.py
- 4. test_boutiques_logs.txt is the commands and logs of the testing period.
+ 4. test_boutiques_logs.md is the commands and logs of the testing period.
  
