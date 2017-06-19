@@ -1,5 +1,6 @@
 ## Running Example_to_docker_v2 in Docker
 docker pull jngong/nitb_uestc_test
+
 docker run -v /Users/gongjinnan/temp_for_docker/:/data --rm jngong/nitb_uestc_test Example_to_docker_v2 /data/Nii_Images_fortest/JME_01_fMRI.nii /data/test.txt 1
 
 		Creating MATLAB Runtime Cache at location: /tmp/.mcrCache9.0
@@ -38,6 +39,7 @@ docker run -v /Users/gongjinnan/temp_for_docker/:/data --rm jngong/nitb_uestc_te
 
 
 ## Boutiques testing 
+
 bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques validator.rb /usr/local/boutiques/schema/descriptor.schema.json ./nitb_uestc_test.json
 
 		["OK"]
