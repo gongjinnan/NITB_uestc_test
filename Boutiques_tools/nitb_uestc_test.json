@@ -14,14 +14,14 @@
     {
       "id": "nii_file",
       "name": "Nifti file to be read",
-      "type": "File",
+      "type": "String",
       "value-key": "[NII]",
       "optional": false
     },
     {
       "id": "out_path",
       "name": "Nifti file to be read",
-      "type": "File",
+      "type": "String",
       "value-key": "[TXT]",
       "optional": false
     },
@@ -35,9 +35,10 @@
   ],
   "output-files": [
     {
-      "id": "out_txt",
-      "name": "Output text file",
-      "path-template": "test.txt",
+      "id" : "out_txt",
+      "name" : "Output text file",
+      "path-template" : "[TXT]",
+      "path-template-stripped-extensions" :[".nii",".nii.gz"],
       "optional": false
     }
   ]
