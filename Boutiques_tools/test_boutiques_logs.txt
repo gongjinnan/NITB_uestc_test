@@ -1,0 +1,53 @@
+
+%% Successful 
+
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques validator.rb /usr/local/boutiques/schema/descriptor.schema.json ./nitb_uestc_test.json
+		["OK"]
+
+
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques localExec.py -i inputs_localExec.json -e ./nitb_uestc_test.json
+		/bin/sh: docker: command not found
+		/bin/sh: docker: command not found
+		Attempting execution of command:
+			Example_to_docker_v2  /data/Nii_Images_fortest/T1_test.nii  /data/Nii_Images_fortest/test.txt  1
+		---/* Start program output */---
+		Executing in Docker via: docker run --rm  -v ${PWD}:${PWD} -w ${PWD} jngong/nitb_uestc_test ./temp-1497910031562.localExec.dockerjob.sh
+		---/* End program output */---
+		Completed execution (exit code: 127)
+		Looking for output files:
+			Required output file 'Output text file' was found at /data/Nii_Images_fortest/test.txt
+	
+	
+docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json
+		{
+		   "description" : "Input parameters schema for nitb_uestc_test.",
+		   "title" : "nitb_uestc_test.invocationSchema",
+		   "required" : [
+		      "nii_file",
+		      "out_path",
+		      "flag_of_lang"
+		   ],
+		   "dependencies" : {},
+		   "additionalProperties" : false,
+		   "$schema" : "http://json-schema.org/draft-04/schema#",
+		   "type" : "object",
+		   "properties" : {
+		      "nii_file" : {
+		         "type" : "string"
+		      },
+		      "out_path" : {
+		         "type" : "string"
+		      },
+		      "flag_of_lang" : {
+		         "type" : "number"
+		      }
+		   }
+		}
+		
+
+
+docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json -d ./inputs_invocationSchemaHandler.json
+		Valid data!
+		
+		
