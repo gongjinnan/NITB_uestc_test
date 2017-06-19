@@ -1,8 +1,8 @@
 ## Running Example_to_docker_v2 in Docker
-'docker pull jngong/nitb_uestc_test'
-'docker run -v /Users/gongjinnan/temp_for_docker/:/data --rm jngong/nitb_uestc_test Example_to_docker_v2 /data/Nii_Images_fortest/JME_01_fMRI.nii /data/test.txt 1'
+docker pull jngong/nitb_uestc_test
+docker run -v /Users/gongjinnan/temp_for_docker/:/data --rm jngong/nitb_uestc_test Example_to_docker_v2 /data/Nii_Images_fortest/JME_01_fMRI.nii /data/test.txt 1
 
-		'Creating MATLAB Runtime Cache at location: /tmp/.mcrCache9.0
+		Creating MATLAB Runtime Cache at location: /tmp/.mcrCache9.0
 		.max_size not found.  Using default size of 33554432 bytes.
 		MATLAB Runtime cache extracting component: Example_to_d_7CD9A7912F7E5912BB52EA4379C0A0FA
 		Acquiring MATLAB Runtime cache root-level directory lock... acquire succeeded.
@@ -34,18 +34,18 @@
 		2017-Jun-19 22:39:47.812167
 
 		The image has been loaded, the first 3 Dim is :61 * 73 * 61
-		The value of the middle of the image is:11.28'
+		The value of the middle of the image is:11.28
 
 
 ## Boutiques testing 
-'bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques validator.rb /usr/local/boutiques/schema/descriptor.schema.json ./nitb_uestc_test.json'
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques validator.rb /usr/local/boutiques/schema/descriptor.schema.json ./nitb_uestc_test.json
 
-		'["OK"]'
+		["OK"]
 
 
-'bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques localExec.py -i inputs_localExec.json -e ./nitb_uestc_test.json'
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques localExec.py -i inputs_localExec.json -e ./nitb_uestc_test.json
 
-		'/bin/sh: docker: command not found
+		/bin/sh: docker: command not found
 		/bin/sh: docker: command not found
 		Attempting execution of command:
 			Example_to_docker_v2  /data/Nii_Images_fortest/T1_test.nii  /data/Nii_Images_fortest/test.txt  1
@@ -54,12 +54,12 @@
 		---/* End program output */---
 		Completed execution (exit code: 127)
 		Looking for output files:
-			Required output file 'Output text file' was found at /data/Nii_Images_fortest/test.txt'
+			Required output file 'Output text file' was found at /data/Nii_Images_fortest/test.txt
 	
 	
-'bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json'
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json
 
-		'{
+		{
 		   "description" : "Input parameters schema for nitb_uestc_test.",
 		   "title" : "nitb_uestc_test.invocationSchema",
 		   "required" : [
@@ -82,12 +82,12 @@
 		         "type" : "number"
 		      }
 		   }
-		}'
+		}
 		
 
 
-'bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json -d ./inputs_invocationSchemaHandler.json'
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json -d ./inputs_invocationSchemaHandler.json
 
-		'Valid data!'
+		Valid data!
 		
 		
