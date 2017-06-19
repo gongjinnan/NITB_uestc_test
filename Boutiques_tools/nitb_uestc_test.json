@@ -14,14 +14,14 @@
     {
       "id": "nii_file",
       "name": "Nifti file to be read",
-      "type": "File",
+      "type": "String",
       "value-key": "[NII]",
       "optional": false
     },
     {
       "id": "out_path",
       "name": "Nifti file to be read",
-      "type": "File",
+      "type": "String",
       "value-key": "[TXT]",
       "optional": false
     },
