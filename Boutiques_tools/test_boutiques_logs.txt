@@ -1,11 +1,11 @@
 
-%% Successful 
-
 bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques validator.rb /usr/local/boutiques/schema/descriptor.schema.json ./nitb_uestc_test.json
+
 		["OK"]
 
 
 bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques localExec.py -i inputs_localExec.json -e ./nitb_uestc_test.json
+
 		/bin/sh: docker: command not found
 		/bin/sh: docker: command not found
 		Attempting execution of command:
@@ -18,8 +18,8 @@ bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data b
 			Required output file 'Output text file' was found at /data/Nii_Images_fortest/test.txt
 	
 	
-docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json
 bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json
+
 		{
 		   "description" : "Input parameters schema for nitb_uestc_test.",
 		   "title" : "nitb_uestc_test.invocationSchema",
@@ -47,7 +47,8 @@ bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data b
 		
 
 
-docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json -d ./inputs_invocationSchemaHandler.json
+bash-3.2$ docker run --rm -v /Users/gongjinnan/temp_for_docker/:/data -w /data boutiques/boutiques invocationSchemaHandler.py -i ./nitb_uestc_test.json -d ./inputs_invocationSchemaHandler.json
+
 		Valid data!
 		
 		
