@@ -1,7 +1,12 @@
 {
-  "inputs":[
-    {"nii_file" : "/data/Nii_Images_fortest/T1_test.nii"},
-    {"out_path" : "/data/Nii_Images_fortest/test.txt"},
-    {"flag_of_lang" : 1}
+  "inputs":[{
+      "nii_file":"T1_test.nii"
+    },
+    {
+      "out_path":"test.txt"
+    },
+    {
+      "flag_of_lang":1
+    }
   ]
 }
