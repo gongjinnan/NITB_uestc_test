@@ -2,7 +2,7 @@
   "name": "nitb_uestc_test",
   "tool-version": "0.01",
   "description": "Report the central value of an MRI image, and output to a text file.",
-  "command-line": "Example_to_docker_v2 [NII] [TXT] [F]",
+  "command-line": "\script\NITB_uestc_test\Example_to_docker_v2 [NII] [TXT] [F]",
   "container-image": {
     "type": "docker",
     "image": "jngong/nitb_uestc_test",
@@ -14,7 +14,7 @@
     {
       "id": "nii_file",
       "name": "Nifti file to be read",
-      "type": "String",
+      "type": "File",
       "value-key": "[NII]",
       "optional": false
     },
