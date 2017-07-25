@@ -1,4 +1,4 @@
-FROM jngong/matlab_v90_fsl_ubuntu
+FROM daocloud.io/jngong/matlab_v90_fsl_ubuntu
 MAINTAINER Jinnan Gong <gongjinnan1989@gmail.com>
 RUN apt-get -y install git
 RUN mkdir -p /script
